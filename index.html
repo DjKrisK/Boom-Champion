@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Audio Stream</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUedv_2aP46SunLP4h6HQgaQvGVFP8ENzZ9g&s') no-repeat center center fixed;
+      background-size: cover;
+    }
+    audio {
+      position: absolute;
+      bottom: 20px;
+      width: 80%;
+    }
+    h1 {
+      position: absolute;
+      top: 20px;
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-shadow: 2px 2px 5px black;
+    }
+  </style>
+</head>
+<body>
+  <h1>Live Audio Stream</h1>
+  <audio controls autoplay>
+    <source src="https://s8.yesstreaming.net:17103/stream" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
